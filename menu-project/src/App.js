@@ -1,20 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import menu from './Utils/data';
 import MenuItems from './Components/MenuItems';
 
 function App() {
-    function menuItems(param) {
-        console.log(`"${param}" is what's passed in`);
-        return <MenuItems params={param}/>;
-    }
+    const [data, setData] = useState(menu);
 
     return (
         <div>
-            <h1>Our Menu</h1>
+            <h1 id='title'>Our Menu</h1>
             <div id='navbar'>
-                <button onClick={() => {
-                    console.log('Button Works');
-                    menuItems('none');
-                }}>Here</button>
+                <button className='navBtn' onClick={() => setData(menu)}>All</button>
+                <button className='navBtn' onClick={() => setData(menu.filter(item => item.category === 'breakfast'))}>Breakfast</button>
+                <button className='navBtn' onClick={() => setData(menu.filter(item => item.category === 'lunch'))}>Lunch</button>
+                <button className='navBtn' onClick={() => setData(menu.filter(item => item.category === 'shakes'))}>Shakes</button>
+            </div>
+            <div id='menuItems'>
+                <MenuItems data={data} />
             </div>
         </div>
     )

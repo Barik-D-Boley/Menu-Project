@@ -1,0 +1,18 @@
+#menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menuItem {
+    width: 50rem;
+    display: inline-flex;
+}
+.title {
+    width: 50%;
+    text-transform: capitalize;
+}
+.desc {
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}

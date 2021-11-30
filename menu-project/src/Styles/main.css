@@ -1,2 +1,39 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar {
+  display: flex;
+  width: 30rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navBtn {
+  width: 5rem;
+}
+
+#menuItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menuItem {
+  width: 50rem;
+  display: inline-flex;
+}
+
+.title {
+  width: 50%;
+  text-transform: capitalize;
+}
+
+.desc::first-letter {
+  text-transform: capitalize;
+}/*# sourceMappingURL=main.css.map */
