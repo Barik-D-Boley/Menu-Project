@@ -7,15 +7,26 @@ body {
   justify-content: center;
 }
 
+#titleUnderline {
+  color: #c59d5f;
+  width: 3.5rem;
+  height: 0.2rem;
+}
+
 #navbar {
   display: flex;
-  width: 30rem;
+  width: 25rem;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 .navBtn {
-  width: 5rem;
+  color: #c59d5f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 #menuItems {
@@ -34,6 +45,15 @@ body {
   text-transform: capitalize;
 }
 
+.price {
+  color: #c59d5f;
+}
+
 .desc::first-letter {
   text-transform: capitalize;
+}
+
+.image {
+  border: 0.3rem solid #c59d5f;
+  border-radius: 0.3rem;
 }/*# sourceMappingURL=main.css.map */

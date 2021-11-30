@@ -9,7 +9,7 @@ function MenuItems(data) {
         const { desc, id, img, price, title } = data[i];
         menuItems.push(
             <div className='menuItem' key={id}>
-                <img src={img} alt={title} />
+                <img className='image' src={img} alt={title} />
                 <div className='textContainer'>
                     <h3 className='title'>{title}</h3>
                     <h3 className='title price'>${price}</h3><hr />

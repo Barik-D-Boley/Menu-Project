@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div>
-            <h1 id='title'>Our Menu</h1>
+            <h1 id='title'>Our Menu</h1><hr id='titleUnderline'/>
             <div id='navbar'>
                 <button className='navBtn' onClick={() => setData(menu)}>All</button>
                 <button className='navBtn' onClick={() => setData(menu.filter(item => item.category === 'breakfast'))}>Breakfast</button>
