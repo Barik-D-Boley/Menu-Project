@@ -2,16 +2,21 @@ $tan: #c59d5f;
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f8;
 }
 
 #title {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
+    font-size: 2.4rem;
 }
 #titleUnderline {
-    color: $tan;
-    width: 3.5rem;
-    height: .2rem;
+    background-color: $tan;
+    border: none;
+    width: 4.5rem;
+    height: .27rem;
+    margin-bottom: 2rem;
 }
 
 #navbar {
@@ -21,11 +26,18 @@ body {
     justify-content: space-between;
 }
 .navBtn {
-    // width: 5rem;
     color: $tan;
+    font-size: 1.2rem;
     background: none;
     border: none;
     cursor: pointer;
     margin: 0;
     padding: 0;
+    &:hover {
+        color: #a87e3f;
+    }
+}
+
+#empty {
+    width: 50rem;
 }

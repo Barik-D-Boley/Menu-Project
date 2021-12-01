@@ -1,16 +1,21 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f8;
 }
 
 #title {
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
+  font-size: 2.4rem;
 }
 
 #titleUnderline {
-  color: #c59d5f;
-  width: 3.5rem;
-  height: 0.2rem;
+  background-color: #c59d5f;
+  border: none;
+  width: 4.5rem;
+  height: 0.27rem;
+  margin-bottom: 2rem;
 }
 
 #navbar {
@@ -22,38 +27,85 @@ body {
 
 .navBtn {
   color: #c59d5f;
+  font-size: 1.2rem;
   background: none;
   border: none;
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
+.navBtn:hover {
+  color: #a87e3f;
+}
+
+#empty {
+  width: 50rem;
+}
 
 #menuItems {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 1rem;
 }
 
 .menuItem {
   width: 50rem;
   display: inline-flex;
+  margin-top: 4rem;
 }
 
-.title {
-  width: 50%;
-  text-transform: capitalize;
-}
-
-.price {
-  color: #c59d5f;
-}
-
-.desc::first-letter {
-  text-transform: capitalize;
+.imgContainer {
+  width: 21rem;
+  height: 14rem;
 }
 
 .image {
   border: 0.3rem solid #c59d5f;
   border-radius: 0.3rem;
+  width: 21rem;
+  height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.textContainer {
+  margin-left: 2rem;
+}
+
+.inlineTitle {
+  display: inline-flex;
+  width: 100%;
+}
+
+.title {
+  color: #142a42;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+
+.price {
+  color: #c59d5f;
+  margin: 0 0 0 auto;
+}
+
+.itemUnderline {
+  margin-top: 1rem;
+  border-top: dotted 3px #142a42;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.desc {
+  color: #6a82b1;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.desc::first-letter {
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

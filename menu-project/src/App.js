@@ -16,6 +16,7 @@ function App() {
             </div>
             <div id='menuItems'>
                 <MenuItems data={data} />
+                <div id='empty'></div>
             </div>
         </div>
     )

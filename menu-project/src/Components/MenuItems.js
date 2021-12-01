@@ -7,12 +7,16 @@ function MenuItems(data) {
 
     for (let i = 0; i < data.length; i++) {
         const { desc, id, img, price, title } = data[i];
+        console.log(img);
         menuItems.push(
             <div className='menuItem' key={id}>
-                <img className='image' src={img} alt={title} />
+                <div className='imgContainer'><img className='image' src={img} alt={title} /></div>
                 <div className='textContainer'>
-                    <h3 className='title'>{title}</h3>
-                    <h3 className='title price'>${price}</h3><hr />
+                    <div className='inlineTitle'>
+                        <h3 className='title'>{title}</h3>
+                        <h3 className='title price'>${price}</h3>
+                    </div>
+                    <hr className='itemUnderline' />
                     <p className='desc'>{desc}</p>
                 </div>
             </div>
